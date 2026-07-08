@@ -1,0 +1,9 @@
+{
+  "name": "aeneid-contabulate",
+  "version": "1.0.0",
+  "description": "Static tabular search for Virgil's Aeneid in Latin.",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2"
+  }
+}

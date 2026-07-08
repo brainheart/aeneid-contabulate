@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "id": "aeneid",
+  "emoji": "⚔️",
+  "title": "Aeneid",
+  "tagline": "Aeneid Tabular Explorer",
+  "language": "Latin",
+  "url": "https://aeneid.contabulate.org/",
+  "source": "https://github.com/brainheart/aeneid-contabulate",
+  "sample_queries": [],
+  "updated": "2026-07-08",
+  "stats": {
+    "texts": 12,
+    "text_label": "books",
+    "segments": 9896,
+    "segment_label": "lines",
+    "words": 63741,
+    "distinct_words": 16626
+  }
+}

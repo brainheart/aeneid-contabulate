@@ -1,0 +1,12 @@
+{
+  "id": "aeneid",
+  "emoji": "⚔️",
+  "title": "Aeneid",
+  "tagline": "Aeneid Tabular Explorer",
+  "language": "Latin",
+  "url": "https://aeneid.contabulate.org/",
+  "source": "https://github.com/brainheart/aeneid-contabulate",
+  "text_label": "books",
+  "segment_label": "lines",
+  "sample_queries": []
+}
