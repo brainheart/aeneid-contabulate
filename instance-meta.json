@@ -4,6 +4,7 @@
   "title": "Aeneid",
   "tagline": "Aeneid Tabular Explorer",
   "language": "Latin",
+  "created": "2026-03-27",
   "url": "https://aeneid.contabulate.org/",
   "source": "https://github.com/brainheart/aeneid-contabulate",
   "text_label": "books",
