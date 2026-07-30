@@ -196,7 +196,12 @@ def build():
 
     # Empty placeholders the frontend may expect
     write_json(DATA_DIR / "characters.json", [])
-    write_json(DATA_DIR / "character_name_filter_config.json", {})
+    write_json(DATA_DIR / "character_name_filter_config.json", {
+        "enabled": False,
+        "notes": ["Disabled: this corpus does not yet have a reviewed proper-name list."],
+        "global_additions": [], "global_removals": [],
+        "play_additions": {}, "play_removals": {},
+    })
     write_json(DATA_DIR / "tokens_char.json", {})
     write_json(DATA_DIR / "tokens_char2.json", {})
     write_json(DATA_DIR / "tokens_char3.json", {})
