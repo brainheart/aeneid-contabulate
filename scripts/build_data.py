@@ -193,6 +193,15 @@ def build():
     write_json(DATA_DIR / "tokens2.json", tokens2)
     write_json(DATA_DIR / "tokens3.json", tokens3)
     write_json(LINES_DIR / "all_lines.json", all_lines)
+    # English glosses and dictionary forms for every word form (reading aids).
+    from glossary import build_glossary
+    glossary, glossary_stats, source = build_glossary(tokens1, ROOT / "source_text")
+    write_json(DATA_DIR / "glossary.json", {
+        "source": "English Wiktionary (CC BY-SA 3.0 / GFDL) via kaikki.org, dictionary of " + source["published"],
+        "meta": {"lang": "la", "dir": "ltr"},
+        **glossary,
+    })
+    print(f"Glossary: {glossary_stats['lemmas']} lemmas for {glossary_stats['forms']} forms.")
 
     # Empty placeholders the frontend may expect
     write_json(DATA_DIR / "characters.json", [])
